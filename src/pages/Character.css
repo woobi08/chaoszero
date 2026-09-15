@@ -1,0 +1,22 @@
+.character-viewport {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-black);
+}
+
+.character-stage {
+  /* 캐릭터마다 컬러 베리에이션 예정 (현재는 Renoa 기준 보라색 테마) */
+  --character-glow-color-1: #6138ac;
+  --character-glow-color-2: #341965;
+  --character-tint-color: rgba(71, 39, 131, 0.7);
+
+  position: relative;
+  width: 1920px;
+  height: 1080px;
+  flex: none;
+  overflow: hidden;
+  background-color: var(--color-black);
+  transform-origin: top center;
+}

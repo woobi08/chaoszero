@@ -1,0 +1,27 @@
+# Figma에서 받은 원본 에셋 더미 (용량이 커서 저장소에는 포함하지 않음, 필요한 것만 public/images로 복사해서 사용)
+피그마에셋/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

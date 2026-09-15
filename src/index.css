@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("./assets/fonts/Pretendard-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("./assets/fonts/Pretendard-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --width-container: 1920px;
+  --width-section: 1920px;
+  --width-section-inner: 1740px;
+
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-purple: #d9a8ff;
+  --color-orange-start: #fd5613;
+  --color-orange-end: #842d0b;
+
+  --font-pretendard: "Pretendard", sans-serif;
+  --font-tektur: "Tektur", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 74px;
+}
+
+body {
+  max-width: var(--width-container);
+  margin: 0 auto;
+  background-color: var(--color-black);
+}

@@ -1,0 +1,30 @@
+.Frame-2078246060 {
+  position: absolute;
+  left: 265px;
+  top: 186px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.Frame-2078246060 .emblem {
+  width: 60px;
+  height: 60px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: #71717a;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transition: background-color 0.2s ease;
+}
+
+.Frame-2078246060 .emblem:hover,
+.Frame-2078246060 .emblem:focus-visible,
+.Frame-2078246060 .emblem.is-active {
+  background-color: var(--color-white);
+}

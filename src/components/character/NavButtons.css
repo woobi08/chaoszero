@@ -1,0 +1,45 @@
+.btn {
+  position: absolute;
+  left: 265px;
+  top: 873px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn .nav-btn {
+  width: 100px;
+  height: 56px;
+  border-radius: 99px;
+  border: 2px solid #a1a1aa;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.btn .nav-btn:hover,
+.btn .nav-btn:focus-visible {
+  border-color: var(--color-white);
+}
+
+.btn .nav-btn__icon {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #a1a1aa;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn .nav-btn:hover .nav-btn__icon,
+.btn .nav-btn:focus-visible .nav-btn__icon {
+  background-color: var(--color-white);
+}

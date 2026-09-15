@@ -1,0 +1,111 @@
+.bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  z-index: 0;
+}
+
+.bg .Ellipse-4 {
+  position: absolute;
+  left: 429px;
+  top: -266px;
+  width: 1736px;
+  height: 1736px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle 771.618px at center,
+    var(--character-glow-color-1) 0%,
+    var(--character-glow-color-2) 42.44%,
+    transparent 100%
+  );
+  mix-blend-mode: lighten;
+}
+
+.bg .Rectangle-21 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  background: linear-gradient(
+    to bottom,
+    transparent 68.4%,
+    var(--character-tint-color) 105.23%
+  );
+  mix-blend-mode: plus-lighter;
+}
+
+.bg .pattern_bg {
+  position: absolute;
+  left: 0;
+  top: 162px;
+  width: 1920px;
+  height: 821px;
+  object-fit: cover;
+}
+
+.bg .Group-57 {
+  position: absolute;
+  left: -16px;
+  top: 977px;
+  width: 2028px;
+  height: 78px;
+  object-fit: cover;
+  mix-blend-mode: screen;
+}
+
+.bg .object {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+.bg .Group-54 {
+  position: absolute;
+  left: 1540px;
+  top: -64px;
+  width: 465.77px;
+  height: 465.77px;
+  animation: character-object-spin-cw 50s linear infinite;
+}
+
+.bg .Group-55 {
+  position: absolute;
+  left: 950px;
+  top: 155px;
+  width: 846.98px;
+  height: 846.98px;
+  animation: character-object-spin-ccw 70s linear infinite;
+}
+
+@keyframes character-object-spin-cw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes character-object-spin-ccw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg .Group-54,
+  .bg .Group-55 {
+    animation: none;
+  }
+}

@@ -1,0 +1,6 @@
+.hover-reveal-image__layer {
+  -webkit-mask-image: radial-gradient(circle 0px at -999px -999px, #fff, transparent);
+  mask-image: radial-gradient(circle 0px at -999px -999px, #fff, transparent);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}

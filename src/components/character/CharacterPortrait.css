@@ -1,0 +1,156 @@
+.character {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  pointer-events: none;
+}
+
+.character .skill {
+  position: absolute;
+  left: 781px;
+  top: 433px;
+  width: 1000px;
+  height: 666.667px;
+  overflow: hidden;
+}
+
+.character .skill img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.character .skill-glitch-slice {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-image: url("/images/character-skill.png");
+  background-size: 1000px 666.667px;
+  animation-name: skill-glitch-jitter;
+  animation-timing-function: steps(1, end);
+  animation-iteration-count: infinite;
+}
+
+@keyframes skill-glitch-jitter {
+  0%,
+  90%,
+  100% {
+    transform: translateX(0);
+  }
+  91% {
+    transform: translateX(-9px);
+  }
+  93% {
+    transform: translateX(7px);
+  }
+  95% {
+    transform: translateX(-4px);
+  }
+  97% {
+    transform: translateX(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .character .skill-glitch-slice {
+    animation: none;
+  }
+}
+
+.character .character-clip {
+  position: absolute;
+  left: 819px;
+  top: 83px;
+  width: 924px;
+  height: 1159px;
+  overflow: hidden;
+}
+
+.character .character-clip img {
+  position: absolute;
+  left: -375.47px;
+  top: 1px;
+  width: 1592.8px;
+  height: 1157.2px;
+  max-width: none;
+}
+
+.character .ob_01 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+}
+
+.character .petal {
+  position: absolute;
+  display: block;
+  width: auto;
+}
+
+.character .petal-4 {
+  left: 1432px;
+  top: 130px;
+  height: 73px;
+  animation: petal-float-a 3.6s ease-in-out infinite;
+}
+
+.character .petal-3 {
+  left: 880px;
+  top: 348px;
+  height: 118.33px;
+  animation: petal-float-b 4.2s ease-in-out infinite;
+  animation-delay: -1.4s;
+}
+
+.character .petal-2 {
+  left: 1516.4px;
+  top: 334px;
+  width: 152.72px;
+  height: 211.39px;
+  animation: petal-float-c 4.8s ease-in-out infinite;
+  animation-delay: -2.6s;
+}
+
+@keyframes petal-float-a {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes petal-float-b {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(12px);
+  }
+}
+
+@keyframes petal-float-c {
+  0%,
+  100% {
+    transform: rotate(-45deg) scaleX(-1) translateY(0);
+  }
+  50% {
+    transform: rotate(-45deg) scaleX(-1) translateY(-16px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .character .petal-4,
+  .character .petal-3,
+  .character .petal-2 {
+    animation: none;
+  }
+}
